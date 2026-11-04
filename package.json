@@ -1,0 +1,7 @@
+{
+  "packageManager": "yarn@1.22.22",
+  "dependencies": {
+    "@metamask/smart-accounts-kit": "^2.0.0",
+    "viem": "^2.31.4"
+  }
+}

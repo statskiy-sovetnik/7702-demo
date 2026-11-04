@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+
+# Logs
+*.log
+yarn-error.log
+npm-debug.log*
+
+# Other package managers (yarn is the package manager for this project)
+package-lock.json
+pnpm-lock.yaml
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Build output
+dist/
+build/
+out/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store

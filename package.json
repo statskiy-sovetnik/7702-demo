@@ -1,7 +1,37 @@
 {
+  "name": "7702-demo",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
   "packageManager": "yarn@1.22.22",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "authorize": "tsx scripts/authorize7702.ts",
+    "revoke": "tsx scripts/revoke7702.ts",
+    "diag": "tsx scripts/check7702.ts",
+    "dryrun": "tsx scripts/dryrun.ts"
+  },
   "dependencies": {
     "@metamask/smart-accounts-kit": "^2.0.0",
-    "viem": "^2.31.4"
+    "@rainbow-me/rainbowkit": "^2.2.11",
+    "@tanstack/react-query": "^5.107.1",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "viem": "^2.31.4",
+    "wagmi": "^2.9.0"
+  },
+  "resolutions": {
+    "viem": "2.57.16"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.3.0",
+    "dotenv": "^18.0.10",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8"
   }
 }
